@@ -1,0 +1,218 @@
+@import "estructura";
+@import "variables";
+@import "grilla";
+
+ul {
+    li{
+        a{
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+.btn-menu{
+    & :hover{
+        color: rgb(18, 89, 212); 
+    }
+}
+.contenido_1{ 
+    background-color: $color_fondo2; 
+    text-align: center;
+    color: whitesmoke;
+}
+.container_bloque1{
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+.container_bloque1{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px 4px rgba(153, 146, 146, 0.3);
+    }
+    &:hover 
+    .titulo_bloque1{
+        width: 100%;
+        font-size: x-large;
+    }
+}
+.titulo_bloque1{
+    width: 0%;
+    max-width: 95%;
+    height: 50vh;
+    background-color: rgba(25, 25, 43, 0.603);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+}
+
+.titulo_bloque1{
+    h2{
+        color: aliceblue;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.title1{
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    text-decoration: none;
+    font-size: x-large;
+    padding: 10px 25px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    border-radius: 10px;
+    border-style: double;
+    border-color: white
+}
+.btn-blue{
+    color: white;
+    background-color: $color_boton;
+    margin-bottom: 20px;
+    &:hover{
+        background-color: $color_boton;
+    }
+    &:active{
+        background-color: aliceblue;
+    }
+}
+.titulo_bloque2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.parrafo_bloque2{
+    font-size: 20px;
+}
+.btnfooter{ 
+    background-color: rgb(5, 35, 88);
+    background-position: 25px 60px;
+    color: white;
+    text-transform: uppercase;
+    font-size: medium;
+    &:hover{
+        background-color: $color_boton;
+    }
+ }
+ .btninstagram{
+    color: rgb(131, 8, 100);
+    &:hover{
+        color: rgba(233, 59, 190, 0.918);
+    }
+}
+.btnfacebook{
+    color: white; 
+    &:hover{
+        color: rgba(70, 124, 243, 0.918);
+    }
+}
+.btntwitter{
+    color: rgb(17, 139, 238);
+    &:hover{
+        color: rgba(18, 22, 32, 0.918);
+        } 
+}
+.btnlinkid{
+    color: rgb(82, 84, 88);
+    &:hover{
+        color: rgba(42, 49, 70, 0.918);
+    }
+}
+.nosotros{
+    text-align: center;
+    position: relative;
+}
+.titulonosotros{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+.nosotros{
+    img {
+        margin: 1.5%;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px 4px rgba(153, 146, 146, 0.3);
+        overflow: hidden;
+    }
+    &:hover 
+    .titulo_excelencia{
+        width: 100%;
+        font-size: x-large;
+    }
+}
+.titulo_excelencia{
+    width: 0%;
+    max-width: 88%;
+    height: 54vh;
+    background-color: rgba(25, 25, 43, 0.603);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+    margin-top: 55px;
+    margin-left: 10px;
+    h2 {
+        color: aliceblue;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width:992px){
+    .titulo_excelencia{ 
+        display: none;
+    }
+}
+.contenido_3{
+    img{
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px 4px rgba(153, 146, 146, 0.3);
+    }
+}
+.parrafo_formacion{
+    margin-top: 40px;
+}
+.card{
+    &:hover
+    img{
+        opacity: 80%;
+        width: 90%;
+        transition: all 1s;
+    }
+}
+.img_contacto{
+    background-image: url(../imgs/contacto.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+#btn-formulario1{
+    @extend .btn; 
+    color: white;
+    background-color:rgb(23, 43, 79);
+    text-transform: uppercase;
+    &:hover {
+        background-color: rgb(10, 95, 245);
+    }
+    &:active{
+        background-color:rgb(5, 61, 163) }
+}
