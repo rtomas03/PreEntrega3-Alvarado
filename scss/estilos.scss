@@ -224,3 +224,42 @@ ul {
     &:active{
         background-color:rgb(5, 61, 163) }
 }
+@media screen and (max-width:425px){
+    header{
+        img {
+            width: 250px;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    header{
+        img {
+            width: 200px;
+        }
+    }
+}
+@media screen and (max-width:320px){
+    header{
+        img {
+            width: 160px;
+        }
+    }
+}
+@media screen and (max-width:425px){
+    .botones_redes{
+        display: flex;
+        justify-content: center;
+        a { 
+            margin: 5px 10px;
+            padding: 10px 10px;
+            align-items: flex-start;
+        }
+    }
+}
+@media screen and (max-width:320px){
+    .botones_redes{
+        a {
+            padding: 10px 5px;
+        }
+    }
+}
