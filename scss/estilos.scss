@@ -107,24 +107,32 @@ ul {
     }
  }
  .btninstagram{
+    padding:8px ;
+    margin: 24px;
     color: rgb(131, 8, 100);
     &:hover{
         color: rgba(233, 59, 190, 0.918);
     }
 }
 .btnfacebook{
+    padding:8px ;
+    margin: 24px;
     color: white; 
     &:hover{
         color: rgba(70, 124, 243, 0.918);
     }
 }
 .btntwitter{
+    padding:8px ;
+    margin: 24px;
     color: rgb(17, 139, 238);
     &:hover{
         color: rgba(18, 22, 32, 0.918);
         } 
 }
 .btnlinkid{
+    padding:8px ;
+    margin: 24px;
     color: rgb(82, 84, 88);
     &:hover{
         color: rgba(42, 49, 70, 0.918);

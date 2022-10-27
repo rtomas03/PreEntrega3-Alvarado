@@ -9,6 +9,18 @@ header {
   header img {
     width: 300px; }
 
+@media screen and (max-width: 425px) {
+  header img {
+    width: 250px; } }
+
+@media screen and (max-width: 375px) {
+  header img {
+    width: 200px; } }
+
+@media screen and (max-width: 320px) {
+  header img {
+    width: 160px; } }
+
 main {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
@@ -26,6 +38,19 @@ footer {
   margin-top: auto;
   background-color: #052358;
   width: 100%; }
+
+@media screen and (max-width: 425px) {
+  .botones_redes {
+    display: flex;
+    justify-content: center; }
+    .botones_redes a {
+      margin: 5px 10px;
+      padding: 10px 10px;
+      align-items: flex-start; } }
+
+@media screen and (max-width: 320px) {
+  .botones_redes a {
+    padding: 10px 5px; } }
 
 .titulo_pag {
   text-transform: uppercase;
@@ -163,21 +188,29 @@ ul li a {
     background-color: #247df0; }
 
 .btninstagram {
+  padding: 8px;
+  margin: 24px;
   color: #830864; }
   .btninstagram:hover {
     color: rgba(233, 59, 190, 0.918); }
 
 .btnfacebook {
+  padding: 8px;
+  margin: 24px;
   color: white; }
   .btnfacebook:hover {
     color: rgba(70, 124, 243, 0.918); }
 
 .btntwitter {
+  padding: 8px;
+  margin: 24px;
   color: #118bee; }
   .btntwitter:hover {
     color: rgba(18, 22, 32, 0.918); }
 
 .btnlinkid {
+  padding: 8px;
+  margin: 24px;
   color: #525458; }
   .btnlinkid:hover {
     color: rgba(42, 49, 70, 0.918); }
